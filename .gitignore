@@ -33,3 +33,29 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# Ignore virtual environment
+venv/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore logs
+*.log
+
+# Ignore database files
+*.db
+
+# Ignore cache files
+__pycache__/
+
+
+# Ignore package build files
+dist/
+build/
+*.egg-info/
+.vercel
+
+# Ignore local development settings
+settings_local.py

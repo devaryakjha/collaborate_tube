@@ -12,12 +12,15 @@
     "url": "https://github.com/devaryakjha/collaborate_tube"
   },
   "scripts": {
-    "dev": "next dev",
+    "fastapi-dev": "pip3 install -r requirements.txt && python3 -m uvicorn src.api.user-service.main:app --reload",
+    "next-dev": "next dev",
+    "dev": "concurrently \"bun next-dev\" \"bun fastapi-dev\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
     "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
