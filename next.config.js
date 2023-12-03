@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/collaborate-tube",
+  assetPrefix: "https://aryak.dev/collaborate-tube",
 };
 
 module.exports = nextConfig;
